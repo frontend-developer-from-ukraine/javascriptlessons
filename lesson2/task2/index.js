@@ -1,1 +1,1 @@
-console.log('a: 17', typeof 17);
+console.log('a: 17', typeof a);

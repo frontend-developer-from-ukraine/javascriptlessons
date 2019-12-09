@@ -3,7 +3,7 @@
 '77';
 
 console.log('+17: ', +17);
-
+console.log("+'77': ", +'77');
 
 
 // Бинарный плюс складывает строки или прибавляет числа
@@ -11,7 +11,7 @@ console.log('+17: ', +17);
 'some' + 'text';
 
 console.log("10 + '5': ", 10 + '5');
-
+console.log("'some' + 'text': ", 'some' + 'text');
 
 
 // Математические операции с undefined возвращают NaN
@@ -19,7 +19,7 @@ undefined + 1;
 console.log('undefined + 1: ', undefined + 1);
 
 null + 8;
-console.log('null + 8: ', null + 8);
+
 
 undefined + '5';
 console.log("undefined + '5': ", undefined + '5');
@@ -38,7 +38,7 @@ let num = 17;
 
 // Постфиксная и префиксная форма записи
 ++num;
-
+console.log('++num: ', num);
 
 let q = num++;
 console.log('num++: ', q);
@@ -66,7 +66,7 @@ console.log("'seventeen' / 3: ", 'seventeen' / 3);
 console.log("4 * 'four': ", 4 * 'four');
 
 17 / 0;
-
+console.log('17 / 0: ', 17 / 0);
 
 
 10 + 'seven';
@@ -76,10 +76,3 @@ undefined + 1;
 console.log("undefined + 1: ", undefined + 1);
 
 null + 8;
-console.log("null + 8: ", null + 8);
-
-undefined + '5';
-console.log("undefined + '5': ", undefined + '5');
-
-'text' + null;
-console.log("'text' + null: ", 'text' + null);

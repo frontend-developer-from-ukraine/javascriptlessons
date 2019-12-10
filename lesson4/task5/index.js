@@ -14,6 +14,6 @@ for (let a = m; a <= n; a++) {
     }
 
     if (a % 5 === 0) {
-        console.log(a);
+        console.log(m);
     }
 }

@@ -1,19 +1,19 @@
-let m = 5;
-let n = 10;
+let m = 40;
+let n = 50;
 
 let result = 0;
 
-for (let a = m; a <= n; a++) {
+for (let i = m; i <= n; i++) {
 
-    if (a % 2 === 0 && a % 4 !== 0) {
-        result += a;
-    } else if (a % 3 === 0) {
-        result -= a;
+    if (i % 2 === 0 && i % 4 !== 0) {
+        result += i;
+    } else if (i % 3 === 0) {
+        result -= i;
     } else if (i % 4 === 0) {
-        result *= a;
+        result *= i;
     }
 
-    if (a % 5 === 0) {
+    if (i % 5 === 0) {
         console.log(i);
     }
 }

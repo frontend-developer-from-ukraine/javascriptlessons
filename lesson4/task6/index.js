@@ -1,8 +1,8 @@
 let sum = 0;
-for (let i = 0; i = 1000; i++) {
-    if (i % 2 == 1) {
+for (let a = 0; a < 1000; a++) {
+    if (a % 2 === 1) {
         console.log('Found');
-        sum += i;
+        sum += a;
     }
 }
 

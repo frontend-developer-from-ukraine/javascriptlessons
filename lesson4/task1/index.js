@@ -1,4 +1,4 @@
-let n = 150;
+let n = 180;
 const sum = 0;
 
 for (let i = 0; i <= n; i++) {

@@ -1,3 +1,3 @@
-  function getSquare(num) {
+  function Square(num) {
       return num * num;
   }

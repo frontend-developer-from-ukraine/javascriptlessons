@@ -1,3 +1,3 @@
-function sayHi(name) {
-    console.log('Hi, Tom' + name);
+function sayHi(Tom) {
+    console.log('Hi, ' + Tom);
 }

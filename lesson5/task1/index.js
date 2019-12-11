@@ -1,3 +1,3 @@
-function sum(a, b) {
-    return a + b;
+function sum(2, 3) {
+    return 2 + 3;
 }

@@ -6,7 +6,7 @@ function squareArray(arr) {
     }
 
     for (let a = 0; a < arr.length; a++) {
-        squaredArr(arr[a] * arr[a]);
+        squaredArr.push(arr[a] * arr[a]);
     }
 
     return squaredArr;

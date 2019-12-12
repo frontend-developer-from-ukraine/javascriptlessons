@@ -5,7 +5,8 @@ function getSum(array) {
         return null;
     }
 
-    for (let i = 0; i < array.length; i++) {
-        sum += array[i];
+    for (let a = 0; a < array.length; a++) {
+        sum += array[a];
     }
+    return sum;
 }

@@ -1,11 +1,11 @@
 function getSum(array) {
+    let sum = 0;
 
-    if (!Array(array)) {
+    if (!Array.isArray(array)) {
         return null;
     }
 
-    for (let a = 0; a < array.length; a++) {
-        sum += array[a];
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
     }
-    return sum;
 }

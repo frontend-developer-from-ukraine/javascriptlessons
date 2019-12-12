@@ -1,6 +1,6 @@
-function getArrayBounds(arr) {
-    if ((arr)) {
-        return null;
-    }
-    return [arr.length, arr[0], arr[arr.length - 1]]
-}
+  function getArrayBounds(arr) {
+      if (Array(arr)) {
+          return null;
+      }
+      return [arr.length, arr[0], arr[arr.length - 1]]
+  }

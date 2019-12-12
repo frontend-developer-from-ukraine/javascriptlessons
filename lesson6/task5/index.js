@@ -1,8 +1,15 @@
 function squareArray(arr) {
     let squaredArr = [];
 
+    if (!Array.isArray(arr)) {
+        return null;
+    }
 
-    return squaredArr;
-}
+    for (let a = 0; a < arr; a++) {
+        squaredArr(arr[a] * arr[a);
+        }
 
-console.log(squareArray([2, 3, 4, 5]));
+        return squaredArr;
+    }
+
+    console.log(squareArray([2, 3, 4, 5]));

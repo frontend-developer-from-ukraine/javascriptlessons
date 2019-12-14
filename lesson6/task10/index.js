@@ -1,6 +1,6 @@
 function withdraw(clients, balances, client, amount) {
-    if (balances[clients(client)] < amount) {
-        return -1;
+    if (balances[clients.indexOf(client)] < amount) {
+        return;
     }
-    return balances[clients(client)] - amount;
+    return balances[clients.indexOf(client)] - amount;
 }

@@ -1,8 +1,11 @@
 function removeDuplicates(array) {
-    for (let) {
-        if (array.includes(item)) {
-            array.push(item);
+    let array = [];
+
+    for (let item of array) {
+        if (array(item)) {
+            array(item);
         }
     }
+
     return array;
 }

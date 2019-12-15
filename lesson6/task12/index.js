@@ -1,4 +1,4 @@
 function cloneArr(arr) {
-    const clonedArr = arr
+    let clonedArr = [arr];
     return clonedArr;
 }

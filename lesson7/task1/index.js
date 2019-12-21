@@ -5,7 +5,7 @@ const getSpecialNumbers = numbers => {
             specialNumbers.push(numbers[i]);
         }
     }
-    return getSpecialNumbers;
+    return arr.filter;
 };
 const arr = [1, 2, 3, 4, 5, 6];
 console.log(getSpecialNumbers(arr));

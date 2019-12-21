@@ -7,3 +7,5 @@ const getSpecialNumbers = numbers => {
     }
     return getSpecialNumbers;
 };
+const arr = [1, 2, 3, 4, 5, 6];
+console.log(getSpecialNumbers(arr));

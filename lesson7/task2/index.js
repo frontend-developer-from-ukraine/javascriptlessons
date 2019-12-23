@@ -1,7 +1,4 @@
-// unsorted array => sorted array 
-const sortArray = numbers => {
-    numbers.sort((a, b) => a - b);
+const sortDesc = numbers => {
+    numbers.sort((a, b) => b - a);
     return numbers;
 };
-const arr = [a, b];
-console.log(sortArray(arr));

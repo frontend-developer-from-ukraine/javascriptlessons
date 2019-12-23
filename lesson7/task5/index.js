@@ -1,6 +1,7 @@
 function squareArray(arr) {
-    if (!Array(arr)) {
+    if (Array.isArray(arr)) {
         return null;
     }
-    return arr.map);
+
+    return arr.map(num * num);
 }

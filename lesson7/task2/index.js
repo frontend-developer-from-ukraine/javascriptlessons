@@ -1,3 +1,3 @@
-const sortDesc = numbers => {
-    return numbers.slice().sort((a, b) => b - a));
-};
+function sortDesc(arr) {
+    return arr.slice().sort((a, b) => b - a);
+}

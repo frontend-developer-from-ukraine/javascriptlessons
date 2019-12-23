@@ -1,4 +1,3 @@
 const sortDesc = numbers => {
-    numbers.sort((a, b) => b - a);
-    return numbers;
+    return numbers.slice().sort((a, b) => b - a));
 };

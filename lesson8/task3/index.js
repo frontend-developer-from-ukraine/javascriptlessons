@@ -10,7 +10,3 @@ const pickProps = (obj, arr) => {
     }
     return resultObj;
 }
-
-const arr = ['a', 17, 'Max'];
-const result = pickProps(arr);
-console.log(result);

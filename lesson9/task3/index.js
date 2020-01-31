@@ -1,7 +1,3 @@
-function getCustomersList(obj) {
-
-    let newObject = Object.entries(obj)
-        .sort((person, nextPerson) => person[1].age - nextPerson[1].age)
-
-    return newObject;
-}
+const getCustomersList = obj => Object.entries(obj)
+    .map(elem => ({ id: elem[0], ...obj[elem[0]] }))
+    .sort((elem1, elem2) => elem1.age - elem2.age);

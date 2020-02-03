@@ -1,7 +1,10 @@
 const getMaxAbsolutNumber = arr => {
-    const absoluteValues = arr
-        .map(num => Math.abs(num));
+    let max = -Infinity;
 
-    return Math.max(...absoluteValues);
-
+    arr.forEach(num => {
+        if (Math.abs(num) > max) {
+            max = Math.abs(num);
+        }
+    });
+    return max;
 }

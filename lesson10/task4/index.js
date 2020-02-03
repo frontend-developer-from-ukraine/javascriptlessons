@@ -1,7 +1,7 @@
-	const getMaxAbsolutNumber = arr => {
-	    const absoluteValues = arr
-	        .map(num => Math.abs(num));
+const getMaxAbsolutNumber = arr => {
+    const absoluteValues = arr
+        .map(num => Math.abs(num));
 
-	    return Math.max(...absoluteValues);
+    return Math.max(...absoluteValues);
 
-	}
+}

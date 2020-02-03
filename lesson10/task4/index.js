@@ -3,8 +3,9 @@ function getMaxAbsoluteNumber = arr => {
         return null;
     }
 
-    const absoluteValues = arr
-        .map(num => Math.abs(num));
+    const absoluteValues = arr.map(num => {
+        return Math.abs(num)
+    });
 
     return Math.max(...absoluteValues);
 

@@ -6,7 +6,7 @@ const superRound = (number, rounding) => {
         Math.floor(number * calculation) / calculation,
         Math.round(number * calculation) / calculation,
         Math.ceil(number * calculation) / calculation,
-        Math.trunc(number * calculation) / calculation, +num.toFixed(rounding))
-];
+        Math.trunc(number * calculation) / calculation, +(num.toFixed(rounding))
+    ];
 
 }

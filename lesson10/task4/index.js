@@ -1,4 +1,4 @@
-function getMaxAbsoluteNumber = arr => {
+const getMaxAbsoluteNumber = arr => {
     if (!Array.isArray(arr) || arr.length < 1) {
         return null;
     }

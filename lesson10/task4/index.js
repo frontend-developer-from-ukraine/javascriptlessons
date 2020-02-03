@@ -1,6 +1,6 @@
 const getMaxAbsolutNumber = arr => {
 
-    if (!Array.isArray(arr) || arr.length < 1) {
+    if (!Array.isArray(arr) || arr.length === 0) {
         return null;
     }
 

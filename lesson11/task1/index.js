@@ -12,6 +12,3 @@ const splitText = (text, len) => {
     }
     return strArr.join('\n');
 };
-
-
-console.log(splitText('asdfgh', 3));

@@ -3,7 +3,7 @@ const sortContacts = (arr, boolen) => {
         return null;
     }
     const result = arr.sort((a, b) => {
-        if (boolen === true) {
+        if (boolen === true || boolen === null) {
             return a.name.localeCompare(b.name);
         } else {
             return b.name.localeCompare(a.name);

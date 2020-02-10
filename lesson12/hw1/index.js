@@ -2,6 +2,5 @@ const reverseString = (str) => {
     if (typeof str !== "string") {
         return null;
     }
-
-    return text.split();.reverse();.join();
+    return str.split('').reverse().join('');
 }

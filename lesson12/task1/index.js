@@ -11,6 +11,11 @@ const calc = expression => {
         case '-':
             result = a - b;
             break;
+        case '*':
+            result = a * b;
+            break;
+        case ':':
+            result = a / b;
     }
 
     return `${expression} = ${result}`; // улучшили читаемость воспользоваться ${}

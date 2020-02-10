@@ -1,1 +1,1 @@
-const cleanTransactionsList = arr => arr.filter(a => !isNaN(a)).map(a => '$' + Number(a).toFixed(2));
+const cleanTransactionsList = arr => arr.filter(a => !isNaN(a)).map(a => '$' + +a.toFixed(2));

@@ -12,6 +12,9 @@ const splitString = (text, number = 10) => {
         if (chunk.length === 0) {
             break;
         }
+
+        startPosition += number;
+        strArr.push(chunk);
     }
 
     let lastElement = strArr[strArr.length - 1];

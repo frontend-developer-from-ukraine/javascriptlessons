@@ -1,4 +1,4 @@
-const splitString = (text, number = 10) => {
+const splitString = (text, number) => {
 
     if (typeof text !== 'string') {
         return null;

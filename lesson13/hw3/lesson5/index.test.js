@@ -10,11 +10,6 @@ it('should get increase', () => {
     expect(result).toEqual(30);
 });
 
-/*it('should get if the first sum is bigger', () => {
-    const result = compareSums(2, 2, 4, 4);
-    expect(result).toEqual(true);
-});*/
-
 it('should get if the first sum is bigger', () => {
     const result = compareSums(1, 10, 8, 4);
     expect(result).toEqual(false);

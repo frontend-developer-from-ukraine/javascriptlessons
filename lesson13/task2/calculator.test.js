@@ -1,4 +1,4 @@
-import getSum, { getSquaredArray, getOddNumbers } from './index'
+import getSum, { getSquaredArray, getOddNumbers } from './calculator'
 
 
 it('should get squared numbers', () => {

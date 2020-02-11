@@ -12,10 +12,13 @@ export function increaser(a, index) {
     return a > index ? a + index : a;
 }
 
-function compareSums(a, b, c, d) {
-    let firstSum = sum(a, b);
-    let secondSum = sum(c, d);
-    return firstSum > secondSum ? true : false;
+export function sum(from, to) {
+    return from + to;
+}
+
+export const compareSums = (a, b, c, d) => {
+
+    return sum(a, b) > sum(c, d) ? true : false;
 }
 
 export function findDivCount(a, b, n) {

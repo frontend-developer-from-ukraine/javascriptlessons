@@ -27,3 +27,41 @@ export function findDivCount(a, b, n) {
     }
     return counter;
 }
+
+export function squareArray(arr) {
+    if (!Array.isArray(arr)) {
+        return null;
+    }
+    return arr.map(num => num * num);
+}
+
+export function reverseArray(arr) {
+    if (!Array.isArray(arr)) {
+        return null;
+    }
+    let reversedArr = [...arr].reverse();
+    return reversedArr;
+}
+
+export const pickProps = (obj, arr) => {
+    let resultObj = {};
+
+    for (let i of arr) {
+        for (let key in obj) {
+            if (i == key) {
+                resultObj[key] = obj[key];
+            }
+        }
+    }
+    return resultObj;
+}
+
+export const getAdults = obj => {
+    let result = {};
+    for (let key in obj) {
+        if (obj[key] >= 18) {
+            result[key] = obj[key];
+        }
+    }
+    return result;
+}

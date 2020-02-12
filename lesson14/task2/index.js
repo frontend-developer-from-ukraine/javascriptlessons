@@ -1,10 +1,6 @@
-let message = 'Just learn it!';
-let sender = 'Gromcode';
-
-
-export const createMessenger = () => {
-
-
+export default function createMessenger() {
+    let message = 'Just learn it!';
+    let sender = 'Gromcode';
 
     function sendMessage(name) {
         console.log(`${name}, ${message} Your ${sender}`);
@@ -22,4 +18,4 @@ export const createMessenger = () => {
         setMessage,
         setSender
     }
-}
+};

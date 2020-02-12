@@ -9,11 +9,11 @@ export function createCalculator() {
         return num -= sum;
     };
 
-    function reset(sum) {
+    function reset() {
         return sum = 0;
     };
 
-    function getMemo(sum) {
+    function getMemo() {
         return sum;
     };
     return {

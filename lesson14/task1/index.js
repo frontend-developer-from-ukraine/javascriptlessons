@@ -1,9 +1,9 @@
 let message = 'Just learn it';
 
-function sendMessage(name) {
+export function sendMessage(name) {
     console.log(`${name}, ${message}! Your Gromcode`);
 }
 
-function setMessage(text) {
+export function setMessage(text) {
     message = text;
 }

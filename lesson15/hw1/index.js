@@ -23,3 +23,13 @@ export function createCalculator() {
         getMemo,
     }
 }
+
+const number = createCalculator();
+const number1 = createCalculator();
+console.log(number.add(3))
+console.log(number.decrease(3))
+console.log(number.reset(3))
+console.log(number.getMemo(3))
+console.log(number1.add(3))
+console.log(number1.reset(3))
+console.log(number1.getMemo(3))

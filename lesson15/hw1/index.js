@@ -9,12 +9,12 @@ export function createCalculator() {
         return num -= sum;
     };
 
-    function reset() {
-        return sum = 0;
+    function reset(sum) {
+        return num = 0;
     };
 
-    function getMemo() {
-        return sum;
+    function getMemo(sum) {
+        return num;
     };
     return {
         add,

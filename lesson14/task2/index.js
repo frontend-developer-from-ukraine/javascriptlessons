@@ -1,4 +1,4 @@
-const createMessenger = () => {
+export const createMessenger = () => {
     let message = 'Just learn it!';
     let sender = 'Gromcode';
 

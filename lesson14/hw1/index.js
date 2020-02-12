@@ -1,26 +1,17 @@
-export default function createMemory() {
-    let number = 0;
+let num = 0;
 
-    function add(num) {
-        number += num;
-    };
+export function add(sum) {
+    return num += sum;
+};
 
-    function decrease(num) {
-        number -= num;
-    };
+export function decrease(sum) {
+    return num -= sum;
+};
 
-    function reset(num) {
-        number = 0;
-    };
+export function reset(sum) {
+    return num = 0;
+};
 
-    function getMemo(num) {
-        number;
-    };
-    return {
-        add,
-        decrease,
-        reset,
-        getMemo
-
-    }
+export function getMemo(sum) {
+    return num;
 };

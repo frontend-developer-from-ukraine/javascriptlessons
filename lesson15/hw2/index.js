@@ -13,11 +13,11 @@ export function createLogger() {
         return memory.concat({ text: 'log' })
     }
 
-    function getRecords(string) {
-        if (!string) {
+    function getRecords(str) {
+        if (!str) {
             return memory
         };
-        return memory.filter(item => item.text === string);
+        return memory.filter(item => item.text === str);
     }
     return {
         warn,

@@ -1,8 +1,16 @@
-export function createLogger() {
+function createLogger() {
     let memory = [];
 
     function warn(warn) {
-        return memory.push({ message: warn, dateTime: new Date(), type: 'warn' });
+
+
+
+
+        const newMemory = memory.concat({ message: warn, dateTime: new Date(), type: 'warn' });
+
+        memory = newMemory;
+
+        return newMemory;
     }
 
     function error(error) {
@@ -26,3 +34,8 @@ export function createLogger() {
         getRecords,
     }
 }
+
+let test1 = createLogger();
+
+test1.warn('Hi');
+console.log(test1.getRecords())

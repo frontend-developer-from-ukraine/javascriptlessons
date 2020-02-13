@@ -2,15 +2,15 @@ export function createLogger() {
     let memory = [];
 
     function warn(warn) {
-        return memory.concat({ message: warn, dateTime: new Date(), type: 'warn' });
+        return memory.push({ message: warn, dateTime: new Date(), type: 'warn' });
     }
 
     function error(error) {
-        return memory.concat({ message: error, dateTime: new Date(), type: 'error' });
+        return memory.push({ message: error, dateTime: new Date(), type: 'error' });
     }
 
     function log(log) {
-        return memory.concat({ message: log, dateTime: new Date(), type: 'log' })
+        return memory.push({ message: log, dateTime: new Date(), type: 'log' })
     }
 
     function getRecords(str) {

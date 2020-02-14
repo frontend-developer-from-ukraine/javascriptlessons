@@ -1,4 +1,4 @@
-function createArrayOfFunctions(number) {
+export function createArrayOfFunctions(number) {
 
     let arr = [];
 

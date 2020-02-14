@@ -1,17 +1,7 @@
-var arr = [];
-for (var i = 0; i < 10; i++) {
-    (function(i) {
-        arr[i] = function() {
-            return i;
-        }
-    })(i)
-}
-console.log(arr[5]())
+export let arr = [];
 
-var arr = [];
-for (var i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
     arr[i] = function() {
         return i;
     }
 }
-console.log(arr[5]())

@@ -3,14 +3,11 @@ function createLogger() {
 
     function warn(warn) {
 
-
-
-
         const newMemory = memory.concat({ message: warn, dateTime: new Date(), type: 'warn' });
 
         memory = newMemory;
 
-        return newMemory;
+        return memory;
     }
 
     function error(error) {

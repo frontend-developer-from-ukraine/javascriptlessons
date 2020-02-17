@@ -1,20 +1,20 @@
 export const timer = {
     secondsPassed: 0,
     minsPassed: 0,
-    timerId: 0,
+    intervalId: 0,
+    getTime() {
+        return `${this.minsPassed}:${this.secondsPassed < 10 ? '0' + this.secondsPassed : this.secondsPassed}`;
+    },
     startTimer() {
-        this.timerId = setInterval(() => {
-            this.secondsPassed += 5;
+        this.intervalId = setInterval(() => {
+            this.secondsPassed += 5
         }, 5000);
     },
-    getTime() {
-        if (`${this.secondsPassed}` < 10) { return `${this.minsPassed}:${"0" + this.secondsPassed}` };
-        return (`${this.minsPassed}:${this.secondsPassed}`);
-    },
     stopTimer() {
-        clearInterval(this.timerId);
+        clearInterval(this.intervalId);
     },
     resetTimer() {
+        this.minsPassed = 0;
         this.secondsPassed = 0;
     },
 }

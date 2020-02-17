@@ -1,6 +1,7 @@
 export const timer = {
     secondsPassed: 0,
     minsPassed: 0,
+    intervalId: 0,
     startTimer() {
         this.intervalId = setInterval(() => {
             this.secondsPassed += 5

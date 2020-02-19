@@ -1,9 +1,9 @@
 export function spy(func) {
     saveCalls.calls = [];
 
-    function saveCalls(...arguments) {
-        saveCalls.calls.push(arguments)
-        return func.apply(this, arguments)
+    function saveCalls(...arg) {
+        saveCalls.calls.push(arg)
+        return func.apply(this, arg)
     }
     return saveCalls;
 }

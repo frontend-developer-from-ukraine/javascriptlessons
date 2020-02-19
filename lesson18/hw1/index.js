@@ -3,7 +3,7 @@ export function spy(func) {
 
     function saveCalls(...arguments) {
         saveCalls.call.push(arguments);
-        return func.call(this, arguments);
+        return func.apply(this, arguments);
     }
     return saveCalls;
 };

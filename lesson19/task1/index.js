@@ -8,11 +8,20 @@ export const vehicle = {
 };
 export const ship = {
     name: 'Argo',
+    liftAnchorDown() {
+        console.log(`${this.name} lifting anchor down`);
+    },
     liftAnchorUp() {
         console.log(`${this.name} lifting anchor up`);
     },
-    liftAnchorDown() {
-        console.log(`${this.name} lifting anchor down`);
+
+    startMachine() {
+        this.liftAnchorDown()
+        this.move();
+    },
+    stopMachine() {
+        this.liftAnchorUp()
+        this.stop();
     },
 };
 Object.setPrototypeOf(ship, vehicle);

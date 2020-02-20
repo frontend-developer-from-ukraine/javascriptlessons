@@ -16,11 +16,11 @@ export const ship = {
     },
 
     startMachine() {
-        this.liftAnchorDown()
+        this.liftAnchorUp()
         this.move();
     },
     stopMachine() {
-        this.liftAnchorUp()
+        this.liftAnchorDown()
         this.stop();
     },
 };

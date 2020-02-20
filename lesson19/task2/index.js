@@ -1,10 +1,8 @@
-let obj = {};
-export function getOwnProps(obj) {
-    let propArr = [];
-    for (let prop in obj) {
-        if (typeof obj[prop] === 'function')) {
-        propArr.push(prop);
+    export function getOwnProps(obj) {
+        Object.entries(object)
+
+        const arr = object.filter(item => typeof item[1] !== "function")
+
+        const newArr = arr.map(item => item[0]);
+
     }
-}
-return propArr;
-};

@@ -12,7 +12,10 @@ export class Vehicle {
     }
 }
 export class Ship extends Vehicle {
-    constructor(name, maxSpeed) {}
+    constructor(name, maxSpeed) {
+        super(name, false);
+        this.maxSpeed = maxSpeed;
+    }
     move() {
         super.move();
         console.log(`${this.name} lifting anchor up`);

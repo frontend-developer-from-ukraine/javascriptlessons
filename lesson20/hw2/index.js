@@ -23,9 +23,8 @@ export class UserRepository {
         return this._users;
     }
 
-
-    getUserIds() {
-        return this._users.map((a) => a.id);
+    getUserNames() {
+        return this._users.map((a) => a.name);
     }
     getUserNameById(id) {
         for (let i of this._users) {

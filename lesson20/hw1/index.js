@@ -19,7 +19,9 @@ export class Order {
         this.dateConfirmed = new Date();
 
     }
-    isValidType() {}
+    isValidType() {
+        return (this.type === 'Buy' || this.type === 'Sell');
+    }
 }
 const newBuy = new Order(100000, 'Odessa', 'Buy');
 console.log(newBuy);

@@ -23,6 +23,18 @@ export class UserRepository {
         return this._users;
     }
 
+    getUserNames() {
+        return this._users.map((a) => a.name);
+    }
+    getUserIds() {
+        return this._users.map((a) => a.id);
+    }
+    getUserNameById(id) {
+        for (let i of this._users) {
+            if (i.id === id)
+                return i.name;
+        }
+    }
 
 }
 const newUser = new User('333', 'Max', '1234');

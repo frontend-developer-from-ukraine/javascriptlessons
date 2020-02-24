@@ -9,11 +9,10 @@ export class Order {
         this.type = type;
     }
 
-    checkPrice() {}
+    checkPrice() {
+        return this.price > 1000;
+    }
     confirmOrder() {
-        if (!this.isConfirmed) {
-            this.isConfirmed = true;
-        }
 
     }
     isValidType() {

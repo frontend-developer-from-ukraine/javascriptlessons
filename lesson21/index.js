@@ -5,9 +5,11 @@ const tasks = [
     { text: 'Visit doctor', done: true },
     { text: 'Buy meat', done: true },
 ];
-const getListItems = listItems => {
+const renderListItems = listItems => {
     const listElem = document.querySelector('.list');
-    const listItemElems = listItems.sort((a, b) => a.done - b.done)
+
+    const listItemElems = listItems
+        .sort((a, b) => a.done - b.done)
         .map(({ text, done }) => {
             const listItemElem = document.createElement('li');
             listItemElem.classList.add('list__item');
@@ -24,4 +26,4 @@ const getListItems = listItems => {
         });
     listElem.append(...listItemElems);
 };
-getListItems(tasks);
+renderListItems(tasks);

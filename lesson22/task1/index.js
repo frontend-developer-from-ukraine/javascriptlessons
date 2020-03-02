@@ -23,3 +23,39 @@ spanElem.addEventListener("click", logGreySpan, true);
 divElem.addEventListener("click", logGreenDiv);
 pElem.addEventListener("click", logGreenP);
 spanElem.addEventListener("click", logGreenSpan);
+
+const clearBtn = document.querySelector('.clear-btn');
+const removeBtn = document.querySelector('.remove-handles-btn');
+const attachBtn = document.querySelector('.attach-handles-btn');
+
+const getClickBtn = () => {
+    const eventsListElem = document.querySelector('.events-list');
+    eventsListElem.innerHTML = '';
+};
+
+const getRemove = () => {
+    divElem.removeEventListener('click', showGreyDiv, true);
+    divElem.removeEventListener('click', showGreenDiv);
+
+    pElem.removeEventListener('click', showGreyP, true);
+    pElem.removeEventListener('click', showGreenP);
+
+    spanElem.removeEventListener('click', showGreySpan, true);
+    spanElem.removeEventListener('click', showGreenSpan);
+
+};
+
+const getAttach = () => {
+    divElem.addEventListener('click', showGreyDiv, true);
+    divElem.addEventListener('click', showGreenDiv);
+
+    pElem.addEventListener('click', showGreyP, true);
+    pElem.addEventListener('click', showGreenP);
+
+    spanElem.addEventListener('click', showGreySpan, true);
+    spanElem.addEventListener('click', showGreenSpan);
+};
+
+clearBtn.addEventListener('click', getClickBtn);
+removeBtn.addEventListener('click', getRemove);
+attachBtn.addEventListener('click', getAttach);

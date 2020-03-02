@@ -1,26 +1,26 @@
-let divElem = document.querySelector('.rect_div');
-let pElem = document.querySelector('.rect_p');
-let spanElem = document.querySelector('.rect_span');
+const divElem = document.querySelector('.rect_div');
+const pElem = document.querySelector('.rect_p');
+const spanElem = document.querySelector('.rect_span');
 
-let clearBtn = document.querySelector('.clear-btn');
-let removeHandlersBtn = document.querySelector('.remove-handlers-btn');
-let attachHandlersBtn = document.querySelector('.attach-handlers-btn');
+const clearBtn = document.querySelector('.clear-btn');
+const removeHandlersBtn = document.querySelector('.remove-handlers-btn');
+const attachHandlersBtn = document.querySelector('.attach-handlers-btn');
 
-let logTarget = (text, color) => {
+const logTarget = (text, color) => {
 
     let eventsList = document.querySelector('.events-list');
     eventsList.innerHTML += `<span style="color:${color}; margin-left:8px">${text}</span>`;
 
 };
 
-let logGreenDiv = logTarget.bind(null, 'DIV', 'green');
-let logGreyDiv = logTarget.bind(null, 'DIV', 'grey');
+const logGreenDiv = logTarget.bind(null, 'DIV', 'green');
+const logGreyDiv = logTarget.bind(null, 'DIV', 'grey');
 
-let logGreenP = logTarget.bind(null, 'P', 'green');
-let logGreyP = logTarget.bind(null, 'P', 'grey');
+const logGreenP = logTarget.bind(null, 'P', 'green');
+const logGreyP = logTarget.bind(null, 'P', 'grey');
 
-let logGreenSpan = logTarget.bind(null, 'SPAN', 'green');
-let logGreySpan = logTarget.bind(null, 'SPAN', 'grey');
+const logGreenSpan = logTarget.bind(null, 'SPAN', 'green');
+const logGreySpan = logTarget.bind(null, 'SPAN', 'grey');
 
 divElem.addEventListener('click', logGreyDiv, true);
 divElem.addEventListener('click', logGreenDiv);
@@ -34,7 +34,7 @@ spanElem.addEventListener('click', logGreenSpan);
 
 clearBtn.addEventListener('click', function() {
 
-    let eventsList = document.querySelector('.events-list');
+    const eventsList = document.querySelector('.events-list');
     eventsList.innerHTML = '';
 
 });
